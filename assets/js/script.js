@@ -5,16 +5,14 @@ $(function($){
 		event.preventDefault();
 
 		$.ajax({
-	    url: "https://formspree.io/ankit54321@email.com", 
+	    url: "https://formspree.io/ankit54321yy@gmail.com", 
 	    method: "POST",
 	    data: {
-	    	name: $("#name").val(),
 	    	email: $("#email").val(),
 	    	message: $("#message").val()
 	    },
 	    dataType: "json"
 		}).done(function(){
-			$("#name").val("");
 			$("#email").val("");
 			$("#message").val("");
 			alert("Email successfully sent!");
