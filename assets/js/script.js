@@ -5,7 +5,7 @@ $(function($){
 		event.preventDefault();
 
 		$.ajax({
-	    url: "", 
+	    url: "https://formspree.io/ankit54321@email.com", 
 	    method: "POST",
 	    data: {
 	    	name: $("#name").val(),
@@ -17,9 +17,9 @@ $(function($){
 			$("#name").val("");
 			$("#email").val("");
 			$("#message").val("");
-			alert("Email enviado com sucesso!");
+			alert("Email successfully sent!");
 		}).fail(function(){
-			alert("Erro ao enviar email!");
+			alert("error email has not send !");
 		});
 	});
 
